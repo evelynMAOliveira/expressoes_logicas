@@ -1,0 +1,10 @@
+^C:\USERS\EVELY\DEV\EXPRESSOES_LOGICAS\BUILD\CMAKEFILES\7082764362581073205CFD8A418E8447\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/evely/dev/expressoes_logicas -BC:/Users/evely/dev/expressoes_logicas/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/evely/dev/expressoes_logicas/build/expressoes_logicas.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
